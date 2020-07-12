@@ -19,6 +19,10 @@ function load_scripts(){
    wp_enqueue_style( 'animation-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css', array(), '4.1.0', 'all' );
    wp_enqueue_style( 'modalvideo-css', get_template_directory_uri( ) . '/assets/css/modal-video.min.css', array(), '', 'all' );
    wp_enqueue_style( 'template', get_template_directory_uri( ) . '/assets/css/template.css', array(), '1.0', 'all' );
+
+   // CLICK PLAY ASSETS
+   wp_enqueue_style( 'click_play_css', get_template_directory_uri( ) . '/assets/css/click_play.css', array(), '1.0', 'all' );
+   wp_enqueue_script( 'click_play_js', get_template_directory_uri( ) . '/assets/js/click_play.js', array(), '1.0' );
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
